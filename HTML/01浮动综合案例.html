@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>01浮动综合案例</title>
+		<style type="text/css">	
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul,
+			ol,
+			li {
+				list-style-type: none;
+			}
+			
+			.topmemu {
+				height: 60px;
+				border: 1px solid red;
+				background-color: #777777;
+			}
+			
+			.content {
+				height: 500px;
+				border: 1px solid green;
+			}
+			
+			.footer {
+				clear: both;
+				height: 70px;
+				border: 1px solid blue;
+			}
+			
+			/*ul {
+				height: 100%;
+			}*/
+			
+			.topmemu li {
+				display: inline-block;
+				/*line-height: 100%;*/
+				height: 100%;			
+			}
+			
+			li a {
+				/*li标签为块级元素,float为left,让元素显示在一行上*/
+				/*float: left;*/
+				/*内边距*/
+				padding: 20px;
+				/*display: inline-block;*/
+				/*让超链接垂直居中*/
+				line-height: 60px;
+				text-decoration: none;
+			}
+			
+			.topmemu li a:link {
+				color: #fff;				
+			}
+			
+			li  a:hover {
+				background-color: #222;
+			}
+			
+			.index a:link {
+				background-color: #4caf50;
+			}
+			
+			.float-l {
+				float: left;
+			}
+			
+			.sidemenu {
+				width: 220px;
+				height: 500px;
+				border: 1px solid red;
+			}
+			
+			.sidememu-content {
+				width: 620px;
+				height: 500px;
+				border: 1px solid blue;
+			}
+			
+			.sidemenu li {
+				width: 180px;
+				height: 40px;
+				background-color: #eee;
+				margin: 5px 20px 0;				
+			}
+			
+			.sidemenu li a {
+				padding: 10px;
+				display: block;
+				line-height: 40px;
+			}
+			
+			.sidemenu .single a:link {
+				color: white;
+				background-color: #008cba;
+				display: block;
+				width: 160px;
+			}
+			
+			.sidemenu a:hover {
+				color: white;
+				background-color: #666;
+				/*display: block;*/
+				width: 160px;
+				height: ;
+			}
+		</style>
+	</head>
+	<body>
+		<!--顶部的导航栏-->
+		<div class="topmemu">
+			<ul>
+				<li class="index"><a href="#">主页</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+		
+		<!--中间的主题区域-->
+		<div class="content">
+			<!--左侧导航栏-->
+			<div class="sidemenu float-l">
+				<ul>
+					<li><a href="#">HTML</a></li>
+					<li class="single"><a href="#">CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">Node.js</a></li>
+					<li><a href="#">React.js</a></li>
+					<li><a href="#">Vue.js</a></li>
+					<li><a href="#">小程序</a></li>
+				</ul>
+			</div>
+			
+			<!--右侧的内容区-->
+			<div class="sidememu-content float-l">
+				
+			</div>
+		</div>
+		
+		
+		<!--底部-->
+		<div class="footer">
+			
+		</div>
+	</body>
+</html>
